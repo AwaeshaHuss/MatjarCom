@@ -1,2 +1,2 @@
 # MatjrCom
-MatjarCom is an E-commerce project built 100% using dart and flutter with firebase as a backEnd
+MatjarCom is an E-commerce app built using dart and flutter with firebase as a backEnd initialy
