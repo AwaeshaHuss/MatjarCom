@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "451868828876",
+    "project_id": "matjarcom-f59f4",
+    "storage_bucket": "matjarcom-f59f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451868828876:android:73d62962523a74f2f14e69",
+        "android_client_info": {
+          "package_name": "com.misksolution.matjarcom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451868828876-qb9040j9i6va9jp06t75mhcum7u58jak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ7ptR-qfK7QpdFUtx1UB5RzbEhM93EcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451868828876-qb9040j9i6va9jp06t75mhcum7u58jak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
