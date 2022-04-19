@@ -12,7 +12,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(EasyLocalization(
-      supportedLocales: const [Locale('en', 'US'), Locale('ar', 'JO')],
+      supportedLocales: const [Locale('ar', 'JO'), Locale('en', 'US')],
       path: 'assets/translations',
       fallbackLocale: const Locale('en', 'US'),
       startLocale: const Locale('en', 'US'),
