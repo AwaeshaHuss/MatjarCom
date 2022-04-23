@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:matjarcom/globals.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/home.dart';
+import 'package:matjarcom/screens/main_acreens/home/admin_screens/home/home.dart';
 import 'package:matjarcom/screens/profile_screens/register.dart';
 import 'package:matjarcom/screens/main_acreens/home/user_home/home.dart';
 import 'package:matjarcom/services/auth.dart';
@@ -49,7 +49,7 @@ class Login extends StatelessWidget {
         //------------TextFields
         CustomTextField(
           controller: _emailController,
-          maxLength: 24,
+          maxLength: 27,
           hint: 'Enter your email'.tr(),
           isFilled: true,
           inputType: TextInputType.emailAddress,
@@ -62,7 +62,7 @@ class Login extends StatelessWidget {
 
         CustomTextField(
           controller: _passwordController,
-          maxLength: 9,
+          maxLength: 16,
           hint: 'Enter your password'.tr(),
           isFilled: true,
           inputType: TextInputType.visiblePassword,
@@ -80,19 +80,20 @@ class Login extends StatelessWidget {
         Builder(builder: (context) {
           return InkWell(
             onTap: () async {
-              if (_emailController.text == kAdminEmail &&
-                  _passwordController.text == kAdminPassword) {
-                // Navigate to AdminHome
-                Navigator.pushNamed(context, AdminHome.id);
-              }
               // Handle Login Logic
               if (_emailController.text.isNotEmpty &&
                   _passwordController.text.isNotEmpty &&
                   _emailController.text.contains('@') &&
-                  _emailController.text.contains('.')) {
+                  _emailController.text.contains('.') &&
+                  _emailController.text != kAdminEmail &&
+                  _passwordController.text != kAdminPassword) {
                 await Auth().signIn(_emailController.text.trim(),
                     _passwordController.text.trim());
                 Navigator.pushNamed(context, Home.id);
+              } else if (_emailController.text == kAdminEmail &&
+                  _passwordController.text == kAdminPassword) {
+                // Navigate to AdminHome
+                Navigator.pushNamed(context, AdminHome.id);
               }
               Scaffold.of(context).showSnackBar(SnackBar(
                   content: Text('Please Enter Valid Entrires'.tr(),

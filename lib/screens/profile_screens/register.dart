@@ -5,7 +5,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:matjarcom/globals.dart';
 import 'package:matjarcom/models/user.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/home.dart';
+import 'package:matjarcom/screens/main_acreens/home/admin_screens/home/home.dart';
 import 'package:matjarcom/screens/profile_screens/login.dart';
 import 'package:matjarcom/screens/main_acreens/home/user_home/home.dart';
 import 'package:matjarcom/services/auth.dart';
@@ -104,7 +104,7 @@ class Register extends StatelessWidget {
             CustomTextField(
               controller: _phoneController,
               hint: 'Enter your phone'.tr(),
-              maxLength: 12,
+              maxLength: 14,
               isFilled: true,
               inputType: TextInputType.emailAddress,
               fillColor: Colors.white,
@@ -116,7 +116,7 @@ class Register extends StatelessWidget {
 
             CustomTextField(
               controller: _passwordController,
-              maxLength: 9,
+              maxLength: 16,
               hint: 'Enter your password'.tr(),
               isFilled: true,
               inputType: TextInputType.visiblePassword,
@@ -137,8 +137,7 @@ class Register extends StatelessWidget {
                   if (_emailController.text == kAdminEmail &&
                       _passwordController.text == kAdminPassword &&
                       _nameController.text.isNotEmpty &&
-                      _phoneController.text.isNotEmpty &&
-                      isUserSaved) {
+                      _phoneController.text.isNotEmpty) {
                     // Navigate to AdminHome
                     Navigator.pushNamed(context, AdminHome.id);
                   }
@@ -149,6 +148,8 @@ class Register extends StatelessWidget {
                       _emailController.text.contains('@') &&
                       _emailController.text.contains('.') &&
                       _phoneController.text.isNotEmpty &&
+                      _emailController.text != kAdminEmail &&
+                      _passwordController.text != kAdminPassword &&
                       isUserSaved) {
                     await Auth().signUp(_emailController.text.trim(),
                         _passwordController.text.trim());
