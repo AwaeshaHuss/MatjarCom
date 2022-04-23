@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:matjarcom/general_functions.dart';
-import 'package:matjarcom/screens/main_acreens/home/home_screen.dart';
-import 'package:matjarcom/screens/main_acreens/home/no_connection.dart';
+import 'package:matjarcom/screens/main_acreens/home/user_home/home_screen.dart';
+import 'package:matjarcom/screens/main_acreens/home/user_home/no_connection.dart';
 
 class Home extends StatefulWidget {
   static String id = 'Home';
