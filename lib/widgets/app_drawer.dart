@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:matjarcom/screens/profile_screens/login.dart';
 import 'package:matjarcom/screens/profile_screens/profile.dart';
-import 'package:matjarcom/screens/main_acreens/home/home.dart';
+import 'package:matjarcom/screens/main_acreens/home/user_home/home.dart';
 import 'package:matjarcom/screens/settings_screens/settings.dart';
 
 class AppDrawer extends StatelessWidget {

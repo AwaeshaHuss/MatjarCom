@@ -5,8 +5,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:matjarcom/globals.dart';
 import 'package:matjarcom/models/user.dart';
+import 'package:matjarcom/screens/main_acreens/home/admin_screens/home.dart';
 import 'package:matjarcom/screens/profile_screens/login.dart';
-import 'package:matjarcom/screens/main_acreens/home/home.dart';
+import 'package:matjarcom/screens/main_acreens/home/user_home/home.dart';
 import 'package:matjarcom/services/auth.dart';
 import 'package:matjarcom/widgets/custom_text_field.dart';
 
@@ -134,8 +135,12 @@ class Register extends StatelessWidget {
               return InkWell(
                 onTap: () async {
                   if (_emailController.text == kAdminEmail &&
-                      _passwordController.text == kAdminPassword) {
+                      _passwordController.text == kAdminPassword &&
+                      _nameController.text.isNotEmpty &&
+                      _phoneController.text.isNotEmpty &&
+                      isUserSaved) {
                     // Navigate to AdminHome
+                    Navigator.pushNamed(context, AdminHome.id);
                   }
                   // Handle Login Logic
                   else if (_emailController.text.isNotEmpty &&

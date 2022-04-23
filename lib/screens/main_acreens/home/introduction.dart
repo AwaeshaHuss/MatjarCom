@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
 import 'package:matjarcom/globals.dart';
-import 'package:matjarcom/screens/main_acreens/home/home.dart';
+import 'package:matjarcom/screens/main_acreens/home/user_home/home.dart';
 
 class Introduction extends StatefulWidget {
   Introduction({Key? key}) : super(key: key);

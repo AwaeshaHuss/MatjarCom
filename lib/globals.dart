@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:matjarcom/models/product.dart';
+import 'package:matjarcom/screens/main_acreens/home/admin_screens/home.dart';
 import 'package:matjarcom/screens/main_acreens/shipping_screens/add_shipping_address.dart';
 import 'package:matjarcom/screens/main_acreens/home/introduction.dart';
 import 'package:matjarcom/screens/profile_screens/profile.dart';
@@ -9,7 +10,7 @@ import 'package:matjarcom/screens/main_acreens/cart_screens/checkout.dart';
 import 'package:matjarcom/screens/profile_screens/login.dart';
 import 'package:matjarcom/screens/main_acreens/home/product_info.dart';
 import 'package:matjarcom/screens/profile_screens/register.dart';
-import 'package:matjarcom/screens/main_acreens/home/home.dart';
+import 'package:matjarcom/screens/main_acreens/home/user_home/home.dart';
 import 'package:matjarcom/screens/settings_screens/settings.dart';
 
 Map<String, WidgetBuilder> routes = {
@@ -24,6 +25,7 @@ Map<String, WidgetBuilder> routes = {
   Profile.id: (context) => Profile(),
   Settings.id: (context) => Settings(),
   Introduction.id: (context) => Introduction(),
+  AdminHome.id: (context) => AdminHome(),
 };
 
 final List<Product> products = [
