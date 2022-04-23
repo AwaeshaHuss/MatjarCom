@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/meals_page.dart';
+import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/orders_page.dart';
+import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/users_page.dart';
 
 class AdminHomeScreen extends StatelessWidget {
   const AdminHomeScreen({Key? key}) : super(key: key);
@@ -20,7 +23,7 @@ class AdminHomeScreen extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () {
-                  // Navigate To Users page
+                  Navigator.pushNamed(context, UsersPage.id);
                 },
                 child: Card(
                   color: Colors.white,
@@ -60,7 +63,7 @@ class AdminHomeScreen extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  // Navigate To Meals page
+                  Navigator.pushNamed(context, MealsPage.id);
                 },
                 child: Card(
                   color: Colors.white,
@@ -100,35 +103,37 @@ class AdminHomeScreen extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () {
-              // Navigate To Orders page
+              Navigator.pushNamed(context, OrdersPage.id);
             },
-            child: Container(
-              color: Colors.white,
-              width: size.width * .9,
-              padding: EdgeInsets.all(8.0),
-              margin: EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Image.asset('assets/images/store.png'),
-                  Container(
-                    width: size.width * .275,
-                    height: size.height * .1,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Colors.black12,
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            bottomLeft: Radius.circular(20))),
-                    child: Text(
-                      'Orders',
-                      style: TextStyle(
-                          color: Colors.black38,
-                          fontSize: 22,
-                          fontWeight: FontWeight.w700),
+            child: Card(
+              child: Container(
+                color: Colors.white,
+                width: size.width * .9,
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset('assets/images/store.png'),
+                    Container(
+                      width: size.width * .275,
+                      height: size.height * .1,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Colors.black12,
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              bottomLeft: Radius.circular(20))),
+                      child: Text(
+                        'Orders',
+                        style: TextStyle(
+                            color: Colors.black38,
+                            fontSize: 22,
+                            fontWeight: FontWeight.w700),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           )
