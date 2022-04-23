@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:matjarcom/general_functions.dart';
 import 'package:matjarcom/globals.dart';
-import 'package:matjarcom/screens/main_acreens/shipping_address.dart';
+import 'package:matjarcom/screens/main_acreens/shipping_screens/shipping_address.dart';
 import 'package:matjarcom/screens/main_acreens/home/home.dart';
 
 class CheckOut extends StatelessWidget {

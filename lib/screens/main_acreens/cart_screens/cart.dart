@@ -4,7 +4,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:matjarcom/globals.dart';
 import 'package:matjarcom/general_functions.dart';
-import 'package:matjarcom/screens/main_acreens/checkout.dart';
+import 'package:matjarcom/screens/main_acreens/cart_screens/checkout.dart';
 
 class Cart extends StatelessWidget {
   Cart({Key? key}) : super(key: key);

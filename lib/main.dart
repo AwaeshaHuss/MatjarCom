@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:matjarcom/globals.dart';
 import 'package:matjarcom/providers/theme.dart';
-import 'package:matjarcom/screens/main_acreens/introduction.dart';
+import 'package:matjarcom/screens/main_acreens/home/introduction.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:matjarcom/services/Theme.dart';

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:matjarcom/general_functions.dart';
 import 'package:matjarcom/globals.dart';
-import 'package:matjarcom/screens/main_acreens/cart.dart';
-import 'package:matjarcom/screens/main_acreens/product_info.dart';
+import 'package:matjarcom/screens/main_acreens/cart_screens/cart.dart';
+import 'package:matjarcom/screens/main_acreens/home/product_info.dart';
 import 'package:matjarcom/services/search_delegate.dart';
 import 'package:matjarcom/widgets/app_drawer.dart';
 

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:matjarcom/models/product.dart';
-import 'package:matjarcom/screens/main_acreens/add_shipping_address.dart';
-import 'package:matjarcom/screens/main_acreens/introduction.dart';
+import 'package:matjarcom/screens/main_acreens/shipping_screens/add_shipping_address.dart';
+import 'package:matjarcom/screens/main_acreens/home/introduction.dart';
 import 'package:matjarcom/screens/profile_screens/profile.dart';
-import 'package:matjarcom/screens/main_acreens/shipping_address.dart';
-import 'package:matjarcom/screens/main_acreens/cart.dart';
-import 'package:matjarcom/screens/main_acreens/checkout.dart';
+import 'package:matjarcom/screens/main_acreens/shipping_screens/shipping_address.dart';
+import 'package:matjarcom/screens/main_acreens/cart_screens/cart.dart';
+import 'package:matjarcom/screens/main_acreens/cart_screens/checkout.dart';
 import 'package:matjarcom/screens/profile_screens/login.dart';
-import 'package:matjarcom/screens/main_acreens/product_info.dart';
+import 'package:matjarcom/screens/main_acreens/home/product_info.dart';
 import 'package:matjarcom/screens/profile_screens/register.dart';
 import 'package:matjarcom/screens/main_acreens/home/home.dart';
 import 'package:matjarcom/screens/settings_screens/settings.dart';
@@ -25,8 +25,6 @@ Map<String, WidgetBuilder> routes = {
   Settings.id: (context) => Settings(),
   Introduction.id: (context) => Introduction(),
 };
-
-
 
 final List<Product> products = [
   Product(
