@@ -55,26 +55,6 @@ final List<Product> products = [
       price: '30',
       imagePath: 'assets/images/dessert2.jpeg',
       quantity: 2),
-  // Product(
-  //     title: 'Item3',
-  //     price: '27',
-  //     imagePath: 'assets/images/dessert3.jpeg',
-  //     quantity: 4),
-  // Product(
-  //     title: 'Item4',
-  //     price: '33',
-  //     imagePath: 'assets/images/dessert4.jpeg',
-  //     quantity: 2),
-  // Product(
-  //     title: 'Item8',
-  //     price: '20',
-  //     imagePath: 'assets/images/meal2.jpeg',
-  //     quantity: 4),
-  // Product(
-  //     title: 'Item2',
-  //     price: '30',
-  //     imagePath: 'assets/images/dessert2.jpeg',
-  //     quantity: 2),
 ];
 
 //=> Login Keys
