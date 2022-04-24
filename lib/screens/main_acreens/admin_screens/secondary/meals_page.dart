@@ -10,7 +10,7 @@ class MealsPage extends StatelessWidget {
       color: Colors.blue,
       child: Center(
         child: Text(
-          'This Page Contains: Add Meal, Edit Meal and Remove Meal',
+          'This Page Contains: Add Meal, Edit Meal and Remove Meal GridView',
           textAlign: TextAlign.center,
         ),
       ),

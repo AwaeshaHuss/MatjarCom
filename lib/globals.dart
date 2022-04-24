@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:matjarcom/models/product.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/home/home.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/meals_page.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/orders_page.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/users_page.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/home/home.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/secondary/meals_page.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/secondary/orders_page.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/secondary/users_page.dart';
 import 'package:matjarcom/screens/main_acreens/shipping_screens/add_shipping_address.dart';
 import 'package:matjarcom/screens/main_acreens/home/introduction.dart';
 import 'package:matjarcom/screens/profile_screens/profile.dart';

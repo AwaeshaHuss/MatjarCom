@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/meals_page.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/orders_page.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/secondary/users_page.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/secondary/meals_page.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/secondary/orders_page.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/secondary/users_page.dart';
 
 class AdminHomeScreen extends StatelessWidget {
   const AdminHomeScreen({Key? key}) : super(key: key);

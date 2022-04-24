@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:matjarcom/globals.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/home/home.dart';
+import 'package:matjarcom/screens/main_acreens/admin_screens/home/home.dart';
 import 'package:matjarcom/screens/profile_screens/register.dart';
 import 'package:matjarcom/screens/main_acreens/home/user_home/home.dart';
 import 'package:matjarcom/services/auth.dart';

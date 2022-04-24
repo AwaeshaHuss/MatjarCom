@@ -1,9 +1,12 @@
+import 'package:cool_alert/cool_alert.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:matjarcom/globals.dart';
 import 'package:matjarcom/general_functions.dart';
+import 'package:matjarcom/providers/cart_controller.dart';
 import 'package:matjarcom/screens/main_acreens/cart_screens/cart.dart';
+import 'package:provider/provider.dart';
 
 class ProductInfo extends StatefulWidget {
   static String id = 'ProductInfo';
@@ -146,7 +149,7 @@ class _ProductInfoState extends State<ProductInfo> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(tr('Test Title'),
+                      Text('testItem',
                           style: GoogleFonts.oswald(
                             textStyle: const TextStyle(
                                 fontSize: 27,
@@ -234,7 +237,11 @@ class _ProductInfoState extends State<ProductInfo> {
                     topRight: Radius.circular(20),
                     topLeft: Radius.circular(20)),
               ),
-              onPressed: () {},
+              onPressed: () {
+                context.read<CartController>().add(products[0]);
+                showCustomCoolDialog(context, CoolAlertType.success,
+                    'Add To Cart', null, true, null);
+              },
             ),
           ],
         ),

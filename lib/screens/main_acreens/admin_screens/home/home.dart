@@ -4,8 +4,7 @@ import 'dart:developer';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:matjarcom/general_functions.dart';
-import 'package:matjarcom/screens/main_acreens/home/admin_screens/home/admin_home.dart';
-
+import 'package:matjarcom/screens/main_acreens/admin_screens/home/admin_home.dart';
 import 'admin_no_connection.dart';
 
 class AdminHome extends StatefulWidget {
